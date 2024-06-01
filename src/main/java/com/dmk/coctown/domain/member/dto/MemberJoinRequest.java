@@ -1,11 +1,14 @@
 package com.dmk.coctown.domain.member.dto;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @Getter
+@Setter
 @Builder
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class MemberJoinRequest {
 
     private String email;

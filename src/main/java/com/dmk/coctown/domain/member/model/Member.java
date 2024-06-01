@@ -44,6 +44,7 @@ public class Member extends BaseEntity {
                 .email(request.getEmail())
                 .password(encodedPassword)
                 .nickname(request.getNickname())
+                .memberRole(MemberRole.MEMBER)
                 .profileImg(null) // TODO: 프로필 이미지 업로드 구현시 수정 필요.
                 .build();
     }
